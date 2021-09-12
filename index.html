@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayaz Aybek - Search Bar</title>
+</head>
+<style>
+body{
+    background-color: black;
+    user-select: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div{
+    caret-color: white;
+}
+
+#search{
+    width: 360px;
+    height: 60px;
+    border-radius: 30px;
+    outline: none;
+    background-color: #3A3B3C;
+    border: 0px;
+    padding-left: 60px;
+    color: white;
+    font-family: calibri;
+    font-size: 24px;
+    transition-duration: 0.4s;
+    cursor: text;
+    margin-top: 200px;
+}
+
+#search:hover{
+    background-color: #45484b;
+}
+
+::selection{
+    background: rgb(155, 10, 155);
+    color: white;
+}
+
+::placeholder{
+    color: #8D949E;
+}
+
+img{
+    cursor: pointer;
+    border-radius: 40px;
+    filter:opacity(30%);
+    transition-duration: 0.4s;
+    position: absolute;
+    top: 218px;
+    margin-left: 10px;
+}
+
+img:hover{
+    filter: opacity(80%);
+}
+
+</style>
+<body>
+    
+<div class="div">
+    <img src="./images.png" width="40" height="40" alt="">
+    <input type="search" id="search" placeholder="Aramak için buraya yazın...">
+</div>
+</body>
+</html>
